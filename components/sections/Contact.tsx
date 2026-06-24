@@ -8,7 +8,7 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import { SplitTextReveal, SectionWrapper } from "@/components/ui/SplitTextReveal";
 
 const contactLinks = [
-  { icon: Mail, label: "Email", href: `mailto:${siteConfig.email}`, value: siteConfig.email },
+  { icon: Mail, label: "Email", href: `mailto:${siteConfig.email}`, value: "Gmail" },
   { icon: MessageCircle, label: "WhatsApp", href: siteConfig.whatsapp, value: "WhatsApp" },
   { icon: LinkedinIcon, label: "LinkedIn", href: siteConfig.social.linkedin, value: "LinkedIn" },
   { icon: GithubIcon, label: "GitHub", href: siteConfig.social.github, value: "GitHub" },
