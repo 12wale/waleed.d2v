@@ -81,9 +81,9 @@ function ProjectCard({
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm text-white/80 hover:text-secondary transition-colors"
+            className="flex items-center justify-center gap-2 text-sm text-white/80 hover:text-secondary transition-colors min-h-[48px] px-3 rounded-xl hover:bg-white/5"
           >
-            <ExternalLink size={16} />
+            <ExternalLink size={20} />
             معاينة
           </a>
           {project.codeUrl && (
@@ -91,9 +91,9 @@ function ProjectCard({
               href={project.codeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-white/80 hover:text-secondary transition-colors"
+              className="flex items-center justify-center gap-2 text-sm text-white/80 hover:text-secondary transition-colors min-h-[48px] px-3 rounded-xl hover:bg-white/5"
             >
-              <GithubIcon size={16} />
+              <GithubIcon size={20} />
               GitHub
             </a>
           )}

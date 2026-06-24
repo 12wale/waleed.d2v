@@ -41,22 +41,22 @@ export function FAQ() {
                 <div className="glass rounded-2xl overflow-hidden hover:glow-secondary transition-all duration-300">
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : i)}
-                    className="w-full flex items-center justify-between p-5 md:p-6 text-right"
+                    className="w-full flex items-center justify-between p-5 md:p-6 text-right min-h-[60px]"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center flex-shrink-0">
-                        <span className="font-bold text-primary">{i + 1}</span>
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center flex-shrink-0">
+                        <span className="font-bold text-primary text-lg">{i + 1}</span>
                       </div>
-                      <span className="font-semibold text-white/90">{faq.questionAr}</span>
+                      <span className="font-semibold text-white/90 text-base md:text-lg">{faq.questionAr}</span>
                     </div>
                     <div className="flex-shrink-0">
                       {isOpen ? (
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                          <Minus size={18} className="text-white" />
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                          <Minus size={22} className="text-white" />
                         </div>
                       ) : (
-                        <div className="w-10 h-10 rounded-full glass flex items-center justify-center">
-                          <Plus size={18} className="text-secondary" />
+                        <div className="w-12 h-12 rounded-full glass flex items-center justify-center">
+                          <Plus size={22} className="text-secondary" />
                         </div>
                       )}
                     </div>

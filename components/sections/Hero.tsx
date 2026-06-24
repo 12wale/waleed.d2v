@@ -195,7 +195,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section ref={heroRef} id="hero" className="relative  max-w-full min-h-screen overflow-hidden flex items-center justify-center py-24 lg:py-0">
+    <section ref={heroRef} id="hero" className="relative  max-w-full min-h-screen overflow-x-hidden flex items-center justify-center py-24 lg:py-0">
       {/* layered background */}
       <div className="absolute w-full inset-0 bg-[#0B0D17]" />
       <div
@@ -247,10 +247,10 @@ export function Hero() {
               أقوم بتحويل الأفكار المبتكرة إلى تجارب رقمية تفاعلية لا تُنسى. متخصص في بناء مواقع وتطبيقات ويب فائقة السرعة وعصرية باستخدام React و Next.js مع التركيز الكامل على الأداء وتجربة المستخدم المميزة.
             </p>
 
-            <div className="hero-buttons mt-10 flex flex-wrap gap-4 justify-center lg:justify-start">
+            <div className="hero-buttons mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <MagneticBtn
                 href="#projects"
-                className="btn-primary glow-primary flex items-center gap-2 group text-sm sm:text-base font-[family-name:var(--font-cairo)]"
+                className="btn-primary glow-primary flex items-center justify-center gap-2 group text-base sm:text-base font-[family-name:var(--font-cairo)] min-h-[48px] px-6"
               >
                 <span>تصفح أعمالي</span>
                 <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300" />
@@ -258,7 +258,7 @@ export function Hero() {
 
               <MagneticBtn
                 href="#contact"
-                className="btn-secondary flex items-center gap-2 text-sm sm:text-base font-[family-name:var(--font-cairo)]"
+                className="btn-secondary flex items-center justify-center gap-2 text-base sm:text-base font-[family-name:var(--font-cairo)] min-h-[48px] px-6"
               >
                 <span>تواصل معي</span>
               </MagneticBtn>

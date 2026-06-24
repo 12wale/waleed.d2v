@@ -25,7 +25,7 @@ export default function Home() {
       <NoiseOverlay />
       <Navbar />
 
-      <main>
+      <main className="overflow-x-hidden">
         <Hero />
         <About />
         <Stats />

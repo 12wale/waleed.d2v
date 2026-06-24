@@ -44,15 +44,15 @@ export function Contact() {
                 target={label === "Email" ? undefined : "_blank"}
                 rel="noopener noreferrer"
                 whileHover={{ y: -4, scale: 1.05 }}
-                className="glass rounded-2xl p-4 flex flex-col items-center gap-2 hover:glow-primary transition-shadow"
+                className="glass rounded-2xl p-4 flex flex-col items-center justify-center gap-2 hover:glow-primary transition-shadow min-h-[80px]"
               >
-                <Icon size={22} className="text-secondary" />
-                <span className="text-xs text-white/50">{value}</span>
+                <Icon size={28} className="text-secondary" />
+                <span className="text-sm text-white/60">{value}</span>
               </motion.a>
             ))}
           </div>
 
-          <MagneticButton href={`mailto:${siteConfig.email}`} className="text-lg px-10 py-4 glow-primary">
+          <MagneticButton href={`mailto:${siteConfig.email}`} className="text-lg px-10 py-4 glow-primary min-h-[48px]">
             يلا نبدأ
           </MagneticButton>
         </div>

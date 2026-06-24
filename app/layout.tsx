@@ -30,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl" className={`${alexandria.variable} ${cairo.variable}`}>
-      <body className="antialiased">
+    <html lang="ar" dir="rtl" className={`${alexandria.variable} ${cairo.variable} overflow-x-hidden`}>
+      <body className="antialiased overflow-x-hidden">
         <Providers>{children}</Providers>
       </body>
     </html>
