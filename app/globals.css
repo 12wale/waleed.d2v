@@ -55,7 +55,7 @@ h1 span{
 }
 
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 html.lenis,

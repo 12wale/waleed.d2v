@@ -2,8 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { Sword } from 'lucide-react';
-import cursor from '@/public/cursor.png'
-import Image from "next/image";
+
 export function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);
@@ -70,7 +69,28 @@ export function CustomCursor() {
   return (
     <>
       <div ref={cursorRef} className="custom-cursor hidden md:block">
-        <Image src={cursor} alt="cursor" width={32} height={32} />
+        <svg 
+          width="32" 
+          height="32" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="url(#cursor-gradient)" 
+          strokeWidth="2" 
+          strokeLinecap="round" 
+          strokeLinejoin="round"
+          style={{ filter: "drop-shadow(0 0 8px rgba(139, 92, 246, 0.6))" }}
+        >
+          <defs>
+            <linearGradient id="cursor-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#8b5cf6" />
+              <stop offset="50%" stopColor="#00d9ff" />
+              <stop offset="100%" stopColor="#ff4ddb" />
+            </linearGradient>
+          </defs>
+          <path d="M14.5 17.5 3 6V3h3l11.5 11.5" />
+          <path d="M13 19l6-6 4 4-4 4Z" />
+          <path d="m16 16 2 2" />
+        </svg>
       </div>
       <div ref={ringRef} className="custom-cursor-ring hidden md:block" />
     </>
